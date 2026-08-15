@@ -1,83 +1,32 @@
-# StudyMate AI
+# StudyMate AI – Personal AI Study Assistant
 
-StudyMate AI is an LLM-based AI Study Assistant designed to help college students learn and prepare for exams.
+StudyMate AI is an AI-powered study assistant built using Python and Hugging Face.
 
 ## Features
 
-- Ask questions and get AI-generated answers
+- Ask AI study questions
 - Generate multiple-choice quizzes
 - Summarize study topics
-- Generate structured exam answers
-- Generate study flashcards
-- Maintain conversation history
+- Generate college exam answers
+- Create study flashcards
 
 ## Technologies Used
 
 - Python
+- Hugging Face
 - Hugging Face Inference API
-- Hugging Face LLM
 - python-dotenv
-- VS Code
 
-## LLM Model
+## How to Run
 
-The project uses:
+1. Create a `.env` file.
+2. Add your Hugging Face token:
 
-Qwen/Qwen3.8-2.4T-A95B
+HF_TOKEN=your_token_here
 
-The model receives the student's request and generates an AI-based response.
+3. Run the application:
 
-## How It Works
-
-1. The student selects an option from the menu.
-2. The application receives the student's input.
-3. The input is sent to the LLM through Hugging Face.
-4. The LLM generates a response.
-5. The response is displayed in the terminal.
-
-## Project Features
-
-### 1. Ask a Question
-
-Students can ask any study-related question and receive an AI-generated explanation.
-
-### 2. Generate Quiz
-
-The application generates five multiple-choice questions with four options and answers.
-
-### 3. Summarize Topic
-
-The application creates a simple summary containing important points.
-
-### 4. Generate Exam Answer
-
-The application creates a structured answer with an introduction, important points, examples, and conclusion.
-
-### 5. Generate Flashcards
-
-The application generates question-and-answer flashcards for revision.
-
-## Project Structure
-
-AI_Study_Assistant/
-│
-├── app.py
-├── README.md
-├── .env
-└── venv/
-
-## Security
-
-The Hugging Face API token is stored in the `.env` file and should not be uploaded to GitHub.
-
-## Future Improvements
-
-- Add a graphical user interface
-- Add PDF/document question answering
-- Add voice input
-- Add user login
-- Add study progress tracking
-- Deploy the application online
+python app.py
 
 ## Author
 
