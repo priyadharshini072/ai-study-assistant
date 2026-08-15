@@ -5,7 +5,10 @@ from huggingface_hub import InferenceClient
 
 load_dotenv()
 
-token = os.getenv("HF_TOKEN")
+if "HF_TOKEN" in st.secrets:
+    token = st.secrets["HF_TOKEN"]
+else:
+    token = os.getenv("HF_TOKEN")
 
 client = InferenceClient(token=token)
 
