@@ -12,7 +12,7 @@ else:
 
 client = InferenceClient(token=token)
 
-model = "Qwen/Qwen3.8-2.4T-A95B"
+model = "Qwen/Qwen3-4B-Instruct-2507"
 
 st.set_page_config(
     page_title="StudyMate AI",
